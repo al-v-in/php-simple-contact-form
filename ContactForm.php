@@ -5,7 +5,8 @@
  *
  * Has ablity to remember field values in cookies if required.
  * 
- * Form can have a captcha via the securimage plugin.
+ * Form can have a captcha via the securimage plugin. Download from
+ * http://www.phpcaptcha.org/
  *
  * @author Alvin Blewitt
  */
