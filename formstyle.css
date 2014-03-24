@@ -1,0 +1,64 @@
+/* Contact form */
+
+.nww-form {
+	width: 400px;
+	margin: 20px auto 0 auto;
+	border: 1px solid #eee;
+	padding: 10px 15px 15px 15px;
+}
+
+.nww-form .field,
+.nww-form .form-msg{
+	padding: 5px;
+	margin: 10px 0;
+}
+
+.nww-form .field-error{
+  border: 1px solid #f99;
+  background: #ffcccc;
+}
+
+.nww-form .field-error-msg{
+  padding: 2px 4px;
+  margin-top: 3px;
+  color: #f00;
+  font-weight: bold;
+}
+
+.nww-form fieldset{
+	border: none;
+}
+
+.nww-form fieldset label {
+	margin: 3px 0;
+}
+
+.nww-form fieldset label,
+.nww-form fieldset input {
+	display: block;
+}
+
+.nww-form fieldset input.info,
+.nww-form fieldset input[type="text"],
+.nww-form fieldset textarea{
+	width: 95%;
+	width: calc(100% - 10px);
+}
+
+.nww-form fieldset textarea{
+	height: 100px;
+}
+
+.nww-form fieldset textarea,
+.nww-form fieldset input.info,
+.nww-form fieldset input[type="text"],
+.nww-form fieldset select,
+.nww-form fieldset select option{
+	background: #fafafa;
+	color: #000;
+	border: 1px solid #999;
+}
+
+.nww-form fieldset .req-note{
+	margin-top: 15px;
+}
