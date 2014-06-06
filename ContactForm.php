@@ -3,10 +3,11 @@
  * A simple contact form. Takes a specification array for
  * the form, sends the email.
  *
- * Has ablity to remember field values in cookies if required.
+ * Has ability to remember field values in cookies if required.
  * 
- * Form can have a captcha via the securimage plugin. Download from
- * http://www.phpcaptcha.org/
+ * Form can have a captcha via the securimage plugin.
+ *
+ * You shouldn't need to edit this file.
  *
  * @author Alvin Blewitt
  */
@@ -23,8 +24,9 @@ class ContactForm
 	public $formMsgThanks = "Thank you, the form was successfully sent.";
 	public $formMsgError = "Sorry, there was a problem sending the form.";
 	public $captchaDirPath = 'securimage/'; //used in a private php "includes" - relative to this file
-	public $captchaDirUrl = '/securimage/'; //used in public img src relative to web location (i.e. use /path to be relative to root)
+	public $captchaDirUrl = '/securimage/'; //used in public img src relative to web location (i.e. use /[path] to be relative to root)
 	//example and default fields
+	//copy, paste and modify in client file
 	public $fieldAr = array(
 		'title' => array(
 			'is-req' => true,
@@ -205,7 +207,7 @@ class ContactForm
 	}
 	
 	/**
-	 * Seperated out incase you want to do something inbetween, but if not
+	 * Separated out incase you want to do something inbetween, but if not
 	 use this convenience method
 	 */
 	public function checkFormAndSendEmail(){
